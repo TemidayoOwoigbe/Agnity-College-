@@ -2,7 +2,7 @@
 function open_nav() {
     document.querySelector('#open-btn').style.display = 'none';
     document.querySelector('#close-btn').style.display = 'block';
-    document.querySelector('#menu').style.height = '250px';
+    document.querySelector('#menu').style.height = '235px';
 }
 
 //closing the menu 
