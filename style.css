@@ -11,11 +11,11 @@ body {
 }
 
 #menu {
-    background-color: #fff;
+    background-color: #3345F5;
     width: 100%;
     height: 50px;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
@@ -38,14 +38,13 @@ body {
 
 #menu #header-div #header {
     font-size: 20px;
-    font-weight: 600;
-    color: #000;
+    color: #fff;
     padding-top: 5px;
 }
 
 #menu #header-div #menu-btn span {
     font-size: 30px;
-    color: #000;
+    color: #fff;
     padding-top: 5px;
 }
 
@@ -60,14 +59,14 @@ body {
 #links a {
     text-decoration: none;
     font-size: 15px;
-    color: #000;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
 
 #welcome {
     position: relative;
-    padding-top: 67px;
+    padding-top: 60px;
 }
 
 #welcome img {
@@ -80,8 +79,8 @@ body {
 #welcome .title {
     color: #000;
     font-size: 18px;
-    font-weight: 500;
-    padding-left: 15px;
+    font-weight: 600;
+    padding-left: 20px;
     padding-top: 10px;
 }
 
@@ -89,31 +88,32 @@ body {
     content: " ";
     display: block;
     height: 1.5px;
-    width: 25px;
+    width: 40px;
     background: #3343F5;
     border-radius: 100px;
     position: absolute;
-    top: 390px;
+    top: 383px;
 }
 
 #welcome .motto {
     color: #000;
     font-size: 16px;
     font-weight: 500;
-    padding-left: 15px;
-    padding-top: 7px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 
 #welcome .w-p {
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 7px;
     font-size: 14px;
+    font-weight: 500;
 }
 
 #news {
     background: #3345F5;
     margin-top: 30px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -121,14 +121,14 @@ body {
 #news .title {
     color: #FFF;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #news .title:before {
     content: " ";
     display: block;
     height: 1.5px;
-    width: 25px;
+    width: 40px;
     background: #FFF;
     border-radius: 100px;
     position: relative;
@@ -139,7 +139,7 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    padding-top: 7px;
+    padding-top: 15px;
 }
 
 #news .n-p {
@@ -160,21 +160,21 @@ body {
 #alumni .info {
     background: #3345F5;
     padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-bottom: 10px;
 }
 
 #alumni .info .title {
     color: #FFF;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #alumni .info .title:before {
     content: " ";
     display: block;
     height: 1.5px;
-    width: 25px;
+    width: 40px;
     background: #FFF;
     border-radius: 100px;
     position: relative;
@@ -185,7 +185,7 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    padding-top: 7px;
+    padding-top: 15px;
 }
 
 #alumni .info .a-p {
@@ -196,23 +196,23 @@ body {
 }
 
 #educational {
-    margin: 13px;
+    margin-top: 13px;
     padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-bottom: 10px;
 }
 
 #educational .title {
     color: #000;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #educational .title:before {
     content: " ";
     display: block;
     height: 1.5px;
-    width: 25px;
+    width: 40px;
     background: #3345F5;
     border-radius: 100px;
     position: relative;
@@ -223,12 +223,201 @@ body {
     color: #000;
     font-size: 14px;
     font-weight: 500;
-    padding-top: 7px;
+    padding-top: 15px;
 }
 
 #educational .author {
     color: #000;
     font-size: 16px;
     font-weight: 500;
-    padding-top: 7px;
+    padding-top: 10px;
+}
+
+#contact {
+    padding-left: 20px;
+}
+
+#contact .title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#contact .title:before {
+    content: " ";
+    display: block;
+    height: 1.5px;
+    width: 40px;
+    background: #3345F5;
+    border-radius: 100px;
+    position: relative;
+    top: 23px;
+}
+
+#contact .s-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 4px;
+}
+
+#contact form {
+    padding-top: 30px;
+}
+
+#contact form .form-control label {
+    color: #000;
+    font-size: 15px;
+}
+
+#contact form .form-control input {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 300px;
+    border: none;
+    border-bottom: 1.5px solid #3345F5;
+    padding: 10px 5px;
+    word-break: break-all;
+}
+
+#contact form .form-control input::placeholder {
+    color: #000;
+}
+
+#contact form .form-control input:focus {
+    outline: none;
+}
+
+#contact form .form-control #message {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 00;
+    width: 300px;
+    border: none;
+    border-bottom: 1.5px solid #3345F5;
+    padding: 10px 5px;
+    resize: none;
+}
+
+#contact form .form-control #message:focus {
+    outline: none;
+}
+
+#contact form .form-control #message::placeholder {
+    color: black;
+}
+
+#contact form .form-control.error input, #contact form .form-control.error #message {
+    border-color: #F54F33;
+    background-color: #FF554414;
+}
+
+#contact form .form-control.error input::placeholder {
+    color: #F54F33;
+}
+
+#contact form .form-control small {
+    display: block;
+    font-size: 11px;
+    display: none;
+}
+
+#contact form .form-control.error small {
+    display: block;
+    color: #F54F33;
+}
+
+#contact div input[type="submit"] {
+    margin-top: 30px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #3345F5;
+    cursor: pointer;
+}
+
+footer {
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 4px;
+}
+
+footer .contact .address {
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    color: #3345F5;
+}
+
+footer .contact .address span {
+    padding-right: 10px;
+}
+
+
+footer .title h1 {
+    font-size: 18px;
+    color: #3345F5;
+    font-weight: 600px;
+    padding-bottom: 15px;
+}
+
+footer .contact .email {
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    padding-top: 15px;
+    color: #3345F5;
+}
+
+footer .contact .email span {
+    padding-right: 10px;
+}
+
+footer .contact .phone .div1, 
+footer .contact .phone .div2{
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    padding-top: 15px;
+    color: #3345F5;
+}
+
+footer .contact .phone .div1 span,
+footer .contact .phone .div2 span{
+    padding-right: 10px;
+}
+
+footer .message a .fa.fa-facebook-square {
+    margin-top: 15px;
+    color: #3345F5;
+    background: #fff;
+    font-size: 27px;
+}
+
+footer .message span {
+    background: #fff;
+    color: #fff; 
+    width: 5px;
+    height: 10px;
+    position: relative;
+    left: -6px;
+}
+
+footer .message a .fa-brands.fa-square-whatsapp {
+    color: #25D366;
+    background: #fff;
+    font-size: 27px;
+    position: relative;
+    left: 15px;
 }
