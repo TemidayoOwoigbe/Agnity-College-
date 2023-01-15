@@ -8,8 +8,12 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/images/FB_IMG_1665774419908.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <script src="app.js">
-        </script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="https://kit.fontawesome.com/d5c2afb46b.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <script src="validate.js"></script>
         <link rel="stylesheet" href="../style.css">
     </head>
 
@@ -20,9 +24,7 @@
                 <div>
                     <img srcset="/images/FB_IMG_1665774419908.png" src="/images/FB_IMG_1665774419908.png" alt="/images/FB_IMG_1665774419908.png">
                 </div>
-                <div id="header">
-                    Agnity College
-                </div>
+                <h1 id="header">Agnity College</h1>
                 <div id="menu-btn">
                     <span class="material-symbols-outlined" id="open-btn" onclick="open_nav()">
                         menu
@@ -82,6 +84,71 @@
                 <p class="author">~Abraham Lincoln</p>
             </div>
         </div>
+
+        <div id="contact">
+            <p class="title">Contact Us</p>
+            <p class="s-title">At Agnity College, we always have our doors open. Don’t hesitate to get in touch with any questions regarding our academics, events, students, staff or anything else.</p>
+            <form onsubmit="func()" autocomplete="off">
+                <div class="form-control">
+                    <label for="Name">Name</label><br />
+                    <input type="text" name="name" id="name" placeholder="Enter your name" />
+                    <small id="name-error">This input field can't be empty</small>
+                </div><br />
+                <div class="form-control">
+                    <label for="Email">Email</label><br />
+                    <input type="text" name="email" id="email" placeholder="Enter your email" />
+                    <small id="email-error">This input field can't be empty</small>
+                </div><br />
+                <div class="form-control">
+                    <label for="Subject">Subject</label><br />
+                    <input type="text" name="subject" id="subject" placeholder="Type the subject" />
+                    <small id="subject-error">This input field can't be empty</small>
+                </div><br />
+                <div class="form-control">
+                    <label for="Message">Message</label><br />
+                    <textarea name="message" id=message rows="4" placeholder="Enter your message here..."></textarea>
+                    <small id="message-error">This input field can't be empty</small>
+                </div>
+                <div>
+                    <input type="submit" value="Send" />
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="title">
+                <h1>Agnity College</h1>
+            </div>
+            <div class="contact">
+                <div class="address">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>5, Samuel Akinyelu Close, Tipper Junction, Onibudo, Akute, Ijoko Road, Ogun State</p>
+                </div>
+                <div class="email">
+                    <span class="material-symbols-outlined">mail</span>
+                    <p>agnityschool@gmail.com</p>
+                </div>
+                <div class="phone">
+                    <div class="div1">
+                        <span class="material-symbols-outlined">call</span>
+                        <p>+234 805 503 8538</p>
+                    </div>
+                    <div class="div2">
+                        <span class="material-symbols-outlined">call</span>
+                        <p>+234 901 077 5777</p>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <a href="https://www.facebook.com/aginityschool?mibextid=ZbWKwL">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <span>h</span>
+                <a href="https://wa.link/ldk3t9">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+            </div>
+        </footer>
 
     </body>
 
