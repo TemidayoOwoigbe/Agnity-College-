@@ -233,7 +233,7 @@ body {
     padding-top: 10px;
 }
 
-#contact {
+#contact .info {
     padding-left: 20px;
 }
 
@@ -263,6 +263,8 @@ body {
 
 #contact form {
     padding-top: 30px;
+    display: grid;
+    justify-content: center;
 }
 
 #contact form .form-control label {
@@ -347,9 +349,9 @@ body {
 
 footer {
     padding-left: 20px;
-    margin-top: 20px;
+    margin-top: 60px;
     padding-top: 18px;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
     padding-right: 4px;
 }
 
@@ -420,4 +422,10 @@ footer .message a .fa-brands.fa-square-whatsapp {
     font-size: 27px;
     position: relative;
     left: 15px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #3345F5;
+    padding-top: 5px;
 }
