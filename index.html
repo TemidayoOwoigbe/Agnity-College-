@@ -7,13 +7,8 @@
         <title>Agnity College</title>
         <link rel="icon" type="image/png" sizes="32x32" href="/images/FB_IMG_1665774419908.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <script src="https://kit.fontawesome.com/d5c2afb46b.js" crossorigin="anonymous"></script>
         <script src="app.js"></script>
-        <script src="validate.js"></script>
         <link rel="stylesheet" href="../style.css">
     </head>
 
@@ -44,7 +39,9 @@
             </div>
         </div>
         <div id="welcome">
-            <img src="/images/IMG-20221017-WA0023.png" alt="/images/IMG-20221017-WA0023.png" />
+            <div class="img">
+                <img src="/images/IMG-20221017-WA0023.png" alt="/images/IMG-20221017-WA0023.png" />
+            </div>
             <p class="title">Agnity College</p>
             <p class="motto">A Community of Growth </p>
             <p class="w-p">At Agnity College, we empower students to ask insightful questions, explore disciplinary boundaries and confront conventional ways of thinking. Check out our site to learn more about all that we have to offer.</p>
@@ -90,7 +87,7 @@
                 <p class="title">Contact Us</p>
                 <p class="s-title">At Agnity College, we always have our doors open. Don’t hesitate to get in touch with any questions regarding our academics, events, students, staff or anything else.</p>
             </div>
-            <form onsubmit="func()" autocomplete="off">
+            <form onsubmit="func()" autocomplete="off" id="form" >
                 <div class="form-control">
                     <label for="Name">Name</label><br />
                     <input type="text" name="name" id="name" placeholder="Enter your name" />
@@ -112,7 +109,7 @@
                     <small id="message-error">This input field can't be empty</small>
                 </div>
                 <div>
-                    <input type="submit" value="Send" />
+                    <input type="submit" value="Send" id="button" />
                 </div>
             </form>
         </div>
@@ -150,9 +147,13 @@
                     <i class="fa-brands fa-square-whatsapp"></i>
                 </a>
             </div>
-            <p>&copy 2023 by Agnity School. </p>
+            <p><span>&copy</span> 2023 by Agnity School. </p>
         </footer>
 
+        <script type="text/javascript">
+            emailjs.init('YXC0z39cKSaQE0xuh')
+        </script>
+        
     </body>
 
     </html>
